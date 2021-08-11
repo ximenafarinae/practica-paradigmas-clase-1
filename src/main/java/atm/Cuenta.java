@@ -26,9 +26,9 @@ public abstract class Cuenta {
         this.saldo = saldo;
     }
 
-    public abstract retiro();
-    public abstract deposito();
-    public abstract consultaSaldo();
+    public abstract void retiro();
+    public abstract void deposito();
+    public abstract void consultaSaldo();
 
 
 

@@ -1,10 +1,12 @@
 package atm;
 
 public class CajaDeAhorroArs extends Cuenta {
+    protected String tipo;
 
 
-    public CajaDeAhorro(Integer nroDeCuenta) {
-        super(nroDeCuenta);
+    public CajaDeAhorroArs(Integer nroDeCuenta, Integer saldo, String tipo) {
+        super(nroDeCuenta, saldo);
+        this.tipo = tipo;
     }
 
     @Override
