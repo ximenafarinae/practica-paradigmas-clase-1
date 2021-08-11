@@ -1,25 +1,25 @@
 package atm;
 
 public class CajaDeAhorroArs extends Cuenta {
-    protected String tipo;
 
 
-    public CajaDeAhorroArs(Integer nroDeCuenta, Integer saldo, String tipo) {
+    public CajaDeAhorroArs(Integer nroDeCuenta, Integer saldo) {
         super(nroDeCuenta, saldo);
-        this.tipo = tipo;
     }
 
     @Override
-    public void retiro() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer retiro() {
+        return saldo;
     }
+
     @Override
-    public void deposito() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer deposito() {
+        return saldo;
     }
+
     @Override
-    public void consultaSaldo() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer consultaSaldo() {
+        return saldo;
     }
 
 }

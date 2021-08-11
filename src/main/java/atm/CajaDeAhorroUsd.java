@@ -1,20 +1,26 @@
 package atm;
 
 public class CajaDeAhorroUsd extends Cuenta {
+    protected Integer importe;
+
     public CajaDeAhorroUsd(Integer nroCuenta, Integer saldo) {
         super(nroCuenta, saldo);
     }
 
     @Override
-    public void retiro() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer retiro() {
+        saldo = saldo - importe;
+        return saldo;
     }
+
     @Override
-    public void deposito() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer deposito() {
+        saldo = saldo + importe;
+        return saldo;
     }
+
     @Override
-    public void consultaSaldo() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer consultaSaldo() {
+        return saldo;
     }
 }

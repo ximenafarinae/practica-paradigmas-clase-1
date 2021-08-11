@@ -1,19 +1,23 @@
 package atm;
 
 public class CuentaCorriente extends Cuenta {
+
     public CuentaCorriente(Integer nroCuenta, Integer saldo) {
         super(nroCuenta, saldo);
     }
+
     @Override
-    public void retiro() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer retiro() { //TODO: desarrollar el metodo retiro
+        return saldo;
     }
+
     @Override
-    public void deposito() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer deposito() { //TODO: desarrollar el metodo deposito
+        return saldo;
     }
+
     @Override
-    public void consultaSaldo() {
-        System.out.println("Realiza un entrenamiento (Clase Futbolista)");
+    public Integer consultaSaldo() { //TODO: desarrollar el metodo consultar saldo
+        return saldo;
     }
 }
