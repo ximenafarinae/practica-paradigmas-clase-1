@@ -2,11 +2,11 @@ package atm;
 
 public class CuentaCorriente extends Cuenta {
 
-    public CuentaCorriente(Integer nroCuenta, Integer saldo) {
-        super(nroCuenta, saldo);
+    public CuentaCorriente(Integer nroCuenta, Integer saldo,Integer userId) {
+        super(nroCuenta, saldo, userId);
     }
 
-    @Override
+   @Override
     public Integer retiro() { //TODO: desarrollar el metodo retiro
         return saldo;
     }

@@ -2,16 +2,12 @@ package atm;
 
 public class CajaDeAhorroArs extends Cuenta {
 
-
-    public CajaDeAhorroArs(Integer nroDeCuenta, Integer saldo) {
-        super(nroDeCuenta, saldo);
+    public CajaDeAhorroArs(Integer nroCuenta, Integer saldo,Integer userId) {
+        super(nroCuenta, saldo, userId);
     }
 
     @Override
-    public Integer retiro() {
-        return saldo;
-    }
-
+    public Integer retiro() { return saldo; }
     @Override
     public Integer deposito() {
         return saldo;

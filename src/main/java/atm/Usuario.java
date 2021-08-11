@@ -3,11 +3,21 @@ package atm;
 public class Usuario {
     protected String nombre;
     protected String password;
+    protected Integer id;
 
 
-    public Usuario(String nombre, String password) {
+    public Usuario(Integer id, String nombre, String password) {
+        this.id = id;
         this.nombre = nombre;
         this.password = password;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNombre() {
