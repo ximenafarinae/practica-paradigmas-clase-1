@@ -17,7 +17,7 @@ public class CuentaCorriente extends Cuenta {
     }
 
     @Override
-    public Integer consultaSaldo() { //TODO: desarrollar el metodo consultar saldo
-        return saldo;
+    public String consultaSaldo() {
+        return "saldo"+ saldo;
     }
 }

@@ -18,8 +18,8 @@ public class CajaDeAhorroArs extends Cuenta {
     }
 
     @Override
-    public Integer consultaSaldo() {
-        return saldo;
+    public String consultaSaldo() {
+        return "saldo"+ saldo;
     }
 
 }

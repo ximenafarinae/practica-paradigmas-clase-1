@@ -28,7 +28,7 @@ public abstract class Cuenta {
 
     public abstract Integer retiro();
     public abstract Integer deposito();
-    public abstract Integer consultaSaldo();
+    public abstract String consultaSaldo();
 
 
 

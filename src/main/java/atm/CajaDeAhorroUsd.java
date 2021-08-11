@@ -20,7 +20,7 @@ public class CajaDeAhorroUsd extends Cuenta {
     }
 
     @Override
-    public Integer consultaSaldo() {
-        return saldo;
+    public String consultaSaldo() {
+        return "saldo" + saldo;
     }
 }
