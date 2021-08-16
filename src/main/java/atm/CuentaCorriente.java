@@ -2,11 +2,11 @@ package atm;
 
 public class CuentaCorriente extends Cuenta {
 
-    public CuentaCorriente(Integer nroCuenta, Integer saldo,Integer userId) {
-        super(nroCuenta, saldo, userId);
+    public CuentaCorriente(Integer nroCuenta, Integer saldo) {
+        super(nroCuenta, saldo);
     }
 
-   @Override
+   @Override //El retiro tiene un impuesto del 0.3%
     public Integer retiro() { //TODO: desarrollar el metodo retiro
         return saldo;
     }

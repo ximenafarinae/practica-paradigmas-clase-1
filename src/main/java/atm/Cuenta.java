@@ -1,15 +1,15 @@
 package atm;
 
-public abstract class Cuenta implements ICuenta{
+public abstract class Cuenta {
     protected Integer nroCuenta;
     protected Integer saldo;
-    protected Integer userId;
 
+    protected Usuario titular;
 
-    public Cuenta(Integer nroCuenta, Integer saldo, Integer userId) {
+    public Cuenta(Integer nroCuenta, Integer saldo) {
         this.nroCuenta = nroCuenta;
         this.saldo = saldo;
-        this.userId = userId;
+
     }
 
     //Getters
@@ -21,9 +21,6 @@ public abstract class Cuenta implements ICuenta{
         return saldo;
     }
 
-    public Integer getUserId() {
-        return userId;
-    }
 
 
     //Setters
@@ -35,9 +32,13 @@ public abstract class Cuenta implements ICuenta{
         this.nroCuenta = nroCuenta;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+
+    //Metodos
+    abstract Integer retiro();
+
+    abstract Integer deposito();
+
+    abstract String consultaSaldo();
 
 
 }

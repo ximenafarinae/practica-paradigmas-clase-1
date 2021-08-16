@@ -1,31 +1,28 @@
 package atm;
 
+import java.util.List;
+
 public class Usuario {
-    protected String nombre;
-    protected String password;
-    protected Integer id;
+
+    private String nombre;
+    private String password;
+    private Integer id;
+    private List<Cuenta> cuentas;
 
 
-    public Usuario(Integer id, String nombre, String password) {
+    public Usuario(Integer id, String nombre, String password, List<Cuenta> cuentas) {
         this.id = id;
         this.nombre = nombre;
         this.password = password;
+        this.cuentas = cuentas;
     }
 
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getPassword() {
@@ -36,7 +33,4 @@ public class Usuario {
         this.password = password;
     }
 
-    public String cambiarPassword(String password) {
-        return password; //Hacer desarrollo
-    }
 }

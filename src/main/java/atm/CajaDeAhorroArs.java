@@ -2,8 +2,8 @@ package atm;
 
 public class CajaDeAhorroArs extends Cuenta {
 
-    public CajaDeAhorroArs(Integer nroCuenta, Integer saldo,Integer userId) {
-        super(nroCuenta, saldo, userId);
+    public CajaDeAhorroArs(Integer nroCuenta, Integer saldo) {
+        super(nroCuenta, saldo);
     }
 
     @Override
