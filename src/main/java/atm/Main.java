@@ -1,5 +1,10 @@
 package atm;
 
+import atm.cuenta.CajaDeAhorroArs;
+import atm.cuenta.CajaDeAhorroUsd;
+import atm.cuenta.Cuenta;
+import atm.cuenta.CuentaCorriente;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -18,9 +23,9 @@ public class Main {
 
         List<Cuenta> cuentas= new ArrayList<>();
 
-        Cuenta ahorro = new CajaDeAhorroArs(0303456, 0);
-        Cuenta usd = new CajaDeAhorroUsd(11223344, 0);
-        Cuenta ctaCte = new CuentaCorriente(44556677, 0);
+        Cuenta ahorro = new CajaDeAhorroArs(0303456, 0.0);
+        Cuenta usd = new CajaDeAhorroUsd(11223344, 0.0);
+        Cuenta ctaCte = new CuentaCorriente(44556677, 0.0);
         cuentas.add(ahorro);
         cuentas.add(usd);
         cuentas.add(ctaCte);

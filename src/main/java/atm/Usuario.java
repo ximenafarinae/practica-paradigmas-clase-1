@@ -1,5 +1,7 @@
 package atm;
 
+import atm.cuenta.Cuenta;
+
 import java.util.List;
 
 public class Usuario {

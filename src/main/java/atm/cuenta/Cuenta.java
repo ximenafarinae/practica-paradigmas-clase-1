@@ -1,12 +1,14 @@
-package atm;
+package atm.cuenta;
+
+import atm.Usuario;
 
 public abstract class Cuenta {
     protected Integer nroCuenta;
-    protected Integer saldo;
+    protected Double saldo;
 
     protected Usuario titular;
 
-    public Cuenta(Integer nroCuenta, Integer saldo) {
+    public Cuenta(Integer nroCuenta, Double saldo) {
         this.nroCuenta = nroCuenta;
         this.saldo = saldo;
 
@@ -17,14 +19,14 @@ public abstract class Cuenta {
         return nroCuenta;
     }
 
-    public Integer getSaldo() {
+    public Double getSaldo() {
         return saldo;
     }
 
 
 
     //Setters
-    public void setSaldo(Integer saldo) {
+    public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
 
@@ -34,11 +36,12 @@ public abstract class Cuenta {
 
 
     //Metodos
-    abstract Integer retiro();
+    abstract void retirar(Double importe);
 
-    abstract Integer deposito();
+    public void depositar(Double importe) {
+        saldo = saldo + importe;
+    }
 
-    abstract String consultaSaldo();
 
 
 }
